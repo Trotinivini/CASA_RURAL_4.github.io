@@ -33,7 +33,13 @@
 
     .container h1 {
       font-size: 3rem;
+      margin-bottom: 10px;
+    }
+
+    .fecha-objetivo {
+      font-size: 1.2rem;
       margin-bottom: 20px;
+      color: #ccc;
     }
 
     #timer {
@@ -50,11 +56,11 @@
   </div>
 
   <script>
-    // 🎯 Fecha objetivo: 12 de abril de 2025 a las 16:00
-    const fechaObjetivo = new Date("2025-04-12T00:00:00");
+    // 🎯 Fecha objetivo: 12 de abril de 2025 a las 12:00 (mediodía)
+    const fechaObjetivo = new Date("2025-04-12T12:00:00");
 
     // Configura aquí cuántas imágenes tienes en la carpeta 'fondos/'
-    const totalImagenes = 8; // Ajusta este número según tus imágenes (1.png a 5.png)
+    const totalImagenes = 8; // Ajusta este número según tus imágenes
     const rutaCarpeta = "fondos/";
 
     let horaActual = new Date().getHours();
@@ -99,3 +105,4 @@
   </script>
 
 </body>
+</html>
